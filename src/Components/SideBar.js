@@ -44,7 +44,7 @@ const SideBar = () => {
     })
 
     function getRooms() {
-      fetch('http://localhost:5001/rooms').then((res) => res.json()).then((data) => setRooms(data))
+      fetch('https://my-mern-chatapp-backend.herokuapp.com/rooms'|| 'http://localhost:5001/rooms').then((res) => res.json()).then((data) => setRooms(data))
     }
 
     function orderIds(id1, id2) {
