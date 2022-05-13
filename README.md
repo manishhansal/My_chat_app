@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# CHAT APP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my solo project, where a user can create account and start chatting with his/her friend or family, built-in 5 days. Basically, this is my MERN-stack project or full-stack project.
 
-## Available Scripts
+## Tech Stack
+
+### 1. React.js
+### 2. Redux.js
+### 3. React Bootstrap
+### 4. CDNjs
+### 5. Node.js
+### 6. Express.js
+### 7. MongoDB
+### 8. Socket.io
+
+## Live Demo
+https://my-mern-chatapp.netlify.app
+
+
+## Functionality
+
+### 1. User can create account and can only login with registered credentials.
+### 2. User can chat with any registered user of this app.
+### 3. User can send private message or can send group message too.
+
+
+## Pages Built and steps to run the project
+
+First step clone the repository using the git command - git clone https://github.com/manishhansal/My_chat_app
+
+Go to bookmyshow Folder git command - cd mern-chat-frontend
 
 In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Landing Page
+If new user enters in the system then the user will land here.
+![r](https://i.ibb.co/726dwyY/Screenshot-2133.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Login Page
+Here the user can login through registered emailId and password.
+![r](https://i.ibb.co/w4vhtth/Screenshot-2134.png)
 
-### `npm test`
+### 3. Signup Page
+Here user can create his/her account by filling profile picture, name, email, and password.
+![r](https://i.ibb.co/YhXNz7w/Screenshot-2135.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 3. Chat Page (Before Login)
+If a user tries to navigate to chat page before login, will see this page.
+![r](https://i.ibb.co/LrwHNmR/Screenshot-2136.png)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 4. Chat Page (After Login or Register)
+If a user is successfully logged in or registered, will be able to see chat page and also able to chat.
+![r](https://i.ibb.co/k2d5nPh/Screenshot-2137.png)
