@@ -1,7 +1,8 @@
 import {io} from 'socket.io-client';
 import React from 'react';
+import { BASEURL } from '../http-common';
 
-const SOCKET_URL = "https://my-mern-chatapp-backend.herokuapp.com" || "http://localhost:5001";
+const SOCKET_URL = BASEURL;
 export const socket = io(SOCKET_URL);
 
 //app context

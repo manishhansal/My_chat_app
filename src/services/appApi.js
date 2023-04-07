@@ -1,4 +1,5 @@
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
+import { BASEURL } from "../http-common";
 
 //define a service user a base url
 
@@ -6,13 +7,13 @@ const appApi = createApi({
 //creating user
     reducerPath: 'appApi',
     baseQuery: fetchBaseQuery({
-       baseUrl : "https://my-mern-chatapp-backend.herokuapp.com" || 'http://localhost:5001'
+       baseUrl : BASEURL
     }),
 
     endpoints : (builder) => ({
         signupUser : builder.mutation({
             query : (user) => ({
-                url: '/users',
+                url: '/users/signUp',
                 method: 'POST',
                 body: user,
             }),

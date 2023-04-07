@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { AppContext } from '../context/appContext';
 import {addNotifications, resetNotifications} from '../features/userSlice';
 import './Sidebar.css';
+import { BASEURL } from '../http-common';
 
 const SideBar = () => {
     const {socket, setMembers, members, setCurrentRoom, setRooms, privateMemberMsg, rooms, setPrivateMemberMsg, currentRoom} = useContext(AppContext);
@@ -44,7 +45,7 @@ const SideBar = () => {
     })
 
     function getRooms() {
-      fetch('https://my-mern-chatapp-backend.herokuapp.com/rooms'|| 'http://localhost:5001/rooms').then((res) => res.json()).then((data) => setRooms(data))
+      fetch(`${BASEURL}/rooms`).then((res) => res.json()).then((data) => setRooms(data))
     }
 
     function orderIds(id1, id2) {
