@@ -1,6 +1,6 @@
 .home__bg {
     background-image: url(https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGZyaWVuZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
-    height: 92vh;
+    height: 88vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,4 +10,8 @@
 .home-message-icon {
     margin: 10px;
     display: inline-block;
+}
+
+.row {
+    margin-right: 0px !important;
 }
